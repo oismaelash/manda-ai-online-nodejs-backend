@@ -5,5 +5,5 @@
         "content-type": "application/json"
     },
     "requestContext": {},
-    "body": "{\"operationName\": null, \"variables\": null, \"query\": \"{ posts {id} }\"}"
+    "body": "{\"operationName\": null, \"variables\": null, \"query\": \"{ posts {statusCode} }\"}"
 }

@@ -10,6 +10,11 @@ const types = gql`
     time: String
     createdAt: String
   }
+
+  type ResponsePosts {
+    statusCode: Int
+    data: [Post]
+  }
 `;
 
 module.exports = types;

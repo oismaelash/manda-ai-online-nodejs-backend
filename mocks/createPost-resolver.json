@@ -5,5 +5,5 @@
         "content-type": "application/json"
     },
     "requestContext": {},
-    "body": "{\"operationName\": null, \"variables\": null, \"mutation\": \"{ createPost(post: {title: \"titleTest2\", body: \"bodyTest2\", type: \"typeTest2\", date: \"dateTest2\", time: \"timeTest2\"}) { id, title, body, type, date, time } } \"}"
+    "body": "{\"operationName\": null, \"variables\": { \"post\": { \"title\": \"null\", \"body\": \"null\", \"type\": \"null\", \"date\": \"null\", \"time\": \"null\" } }, \"query\": \"mutation CreatePost($post: PostInput) { createPost(post: $post) { title } }\"}"
 }
