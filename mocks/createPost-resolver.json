@@ -1,0 +1,9 @@
+{
+    "httpMethod": "POST",
+    "path": "/",
+    "headers": {
+        "content-type": "application/json"
+    },
+    "requestContext": {},
+    "body": "{\"operationName\": null, \"variables\": null, \"mutation\": \"{ createPost(post: {title: \"titleTest2\", body: \"bodyTest2\", type: \"typeTest2\", date: \"dateTest2\", time: \"timeTest2\"}) { id, title, body, type, date, time } } \"}"
+}
