@@ -8,9 +8,8 @@ const mutation = gql`
   input PostInput {
     title: String!
     body: String!
-    type: String!
-    date: String!
-    time: String!
+    isSchedule: Boolean!
+    datetimeSchedule: String
   }
 `;
 

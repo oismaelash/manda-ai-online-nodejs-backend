@@ -5,15 +5,15 @@ const types = gql`
     id: ID
     title: String
     body: String
-    type: String
-    date: String
-    time: String
+    isSchedule: Boolean
+    datetimeSchedule: String
     createdAt: String
   }
 
   type ResponsePosts {
     statusCode: Int
     data: [Post]
+    error: String
   }
 `;
 

@@ -2,7 +2,9 @@ const { gql } = require("apollo-server-lambda");
 
 const query = gql`
   type Query {
-    posts: ResponsePosts
+    allPosts: ResponsePosts
+    postsSchedule: ResponsePosts
+    postsShow: ResponsePosts
   }
 `;
 

@@ -9,13 +9,12 @@ datasource db {
 }
 
 model post {
-  id        String   @id @default(auto()) @map("_id") @db.ObjectId
-  title     String
-  body      String
-  type      String
-  date      String
-  time      String
-  createdAt DateTime @default(now())
+  id                String   @id @default(auto()) @map("_id") @db.ObjectId
+  title             String
+  body              String
+  isSchedule        Boolean
+  datetimeSchedule  String
+  createdAt         DateTime @default(now())
 
   @@map("contents")
 }

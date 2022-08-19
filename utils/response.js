@@ -8,6 +8,7 @@ module.exports = (success, data) => {
     return {
       statusCode: 400,
       data: null,
+      error: data,
     };
   }
 };
