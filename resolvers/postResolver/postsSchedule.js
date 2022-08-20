@@ -1,15 +1,21 @@
 const response = require("../../utils/response");
-const datetimeUtils = require("../../utils/datetime");
 const { PrismaClient } = require("@prisma/client");
 const prisma = new PrismaClient();
 
-exports.handler = async () => {
+exports.handler = async (datetimeLocale) => {
   try {
     const data = await prisma.post.findMany({
       where: {
-        datetimeSchedule: {
-          lt: datetimeUtils.datetimeLocaleCurrent(),
-        },
+        AND: [
+          {
+            isSchedule: true,
+          },
+          {
+            datetimeSchedule: {
+              gt: datetimeLocale,
+            },
+          },
+        ],
       },
     });
     return response(true, data);

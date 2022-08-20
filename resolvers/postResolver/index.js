@@ -6,8 +6,8 @@ const createPost = require("./createPost");
 const postResolver = {
   Query: {
     allPosts: () => allPosts.handler(),
-    postsSchedule: () => postsSchedule.handler(),
-    postsShow: () => postsShow.handler(),
+    postsSchedule: (_, { datetimeLocale }) => postsSchedule.handler(datetimeLocale),
+    postsShow: (_, { datetimeLocale }) => postsShow.handler(datetimeLocale),
   },
   Mutation: {
     createPost: (_, { post }) => createPost.handler(post),

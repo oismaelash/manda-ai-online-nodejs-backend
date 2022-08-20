@@ -2,7 +2,7 @@ const { gql } = require("apollo-server-lambda");
 
 const mutation = gql`
   type Mutation {
-    createPost(post: PostInput): Post
+    createPost(post: PostInput): ResponsePost
   }
 
   input PostInput {

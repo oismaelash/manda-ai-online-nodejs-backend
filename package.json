@@ -2,7 +2,7 @@
   "name": "manda-ai-online",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "graphql.js",
   "scripts": {
     "prisma:introspect": "prisma introspect",
     "prisma:generate": "prisma generate",

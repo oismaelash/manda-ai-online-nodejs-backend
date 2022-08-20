@@ -1,13 +1,14 @@
 exports.datetimeLocaleCurrent = () => {
   var dateNow = new Date()
     .toLocaleDateString()
-    .replaceAll("/", "-")
+    .replace(/\//g, "-")
     .split("-")
     .reverse()
     .join()
-    .replaceAll(",", "-");
-  var timeNow = new Date().toLocaleString().split(", ")[1];
-  var datetimeLocaleCurrent = new Date(`${dateNow}, ${timeNow}`).getTime().toString();
-
+    .replace(/,/g, "-");
+  var timeNow = `${new Date().getHours()}:${new Date().getMinutes()}:${new Date().getSeconds()}`;
+  var datetimeLocaleCurrent = new Date(`${dateNow}, ${timeNow}`)
+    .getTime()
+    .toString();
   return datetimeLocaleCurrent;
 };

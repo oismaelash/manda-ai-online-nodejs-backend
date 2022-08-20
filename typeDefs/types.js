@@ -15,6 +15,12 @@ const types = gql`
     data: [Post]
     error: String
   }
+
+  type ResponsePost {
+    statusCode: Int
+    data: Post
+    error: String
+  }
 `;
 
 module.exports = types;
