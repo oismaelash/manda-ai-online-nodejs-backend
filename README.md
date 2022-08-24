@@ -1,4 +1,27 @@
 # manda-ai-online-nodejs-lambda-graphql-prisma-mongodb-sls-backend
+Frontend: https://github.com/ismaelash/manda-ai-online-nextjs-frontend/
 
-## demo
-https://ipemakkvzh.execute-api.us-east-1.amazonaws.com/dev/
+## links
+- GraphQL
+https://graphql.org/
+
+- AWS Lambda
+https://aws.amazon.com/lambda/
+
+- Apollo Server (apollo-server-lambda)
+https://www.apollographql.com/docs/apollo-server/deployment/lambda/
+
+- Prisma ORM
+https://www.prisma.io/docs/concepts/database-connectors/mongodb
+
+- MongoDB
+https://www.mongodb.com/atlas/database
+
+- Serverless Framework
+https://www.serverless.com/
+
+- Datetime
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
+
+## Contacts
+https://ismaelnascimento.com
