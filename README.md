@@ -1,4 +1,4 @@
-# manda-ai-online-nodejs-lambda-graphql-prisma-mongodb-sls-backend
+# manda-ai-online-nodejs-backend
 Frontend: https://github.com/ismaelash/manda-ai-online-nextjs-frontend/
 
 # how to use (youtube)
